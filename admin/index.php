@@ -67,7 +67,7 @@ if (!isset($_SESSION["logged_in"])) {
 							echo "<td>" . $row['publisher'] . "</td>";
 							echo "<td>" . $row['publish_date'] . "</td>";
 							echo "<td>" . $row['tag'] . "</td>";
-							echo "<td>" . $row['status'] . "</td>";
+							echo "<td>" . '<a href="applies.php?id=' . $row['id'] . '" title="Check Applies" target="_blank" data-toggle="tooltip"><span class="fa fa-share" style="font-size:25px; color:gray; margin-left: 8px;"></span></a>' . "</td>";
 							echo "<td>";
 							echo '<a href="update.php?id=' . $row['id'] . '" class="mr-3" title="Update Job" data-toggle="tooltip"><span class="fa fa-pencil" style="font-size:25px;"></span></a>';
 							if ($row['status']) {

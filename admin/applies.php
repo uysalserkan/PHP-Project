@@ -308,7 +308,7 @@ if ($result = mysqli_query($conn, $sql_fetch)) {
                                 </table>
                             </div>";
                         } else {
-                            echo '<div class="alert alert-danger"><em>No records were found. Please add one..</em></div>';
+                            echo '<div class="alert alert-danger"><em>No records were found. Wait a person that apply this job...</em></div>';
                         }
                     } else {
                         echo "Oops! Something went wrong. Please try again later.";
