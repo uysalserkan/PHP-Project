@@ -2,11 +2,9 @@
 session_start();
 if (isset($_GET['id'])) {
     $_SESSION['apply_job_id'] = $_GET['id'];
-    echo "Setted SESSION: " . $_SESSION['apply_job_id'] . "<br>";
 } else {
-    echo "GET Alınamadı. " . $_SESSION['apply_job_id'] . "<br>";
+    header("location: index.php");
 }
-echo "Session id:" . $_SESSION['apply_job_id'];
 
 $conn = new mysqli('localhost', 'root', '', 'project');
 
